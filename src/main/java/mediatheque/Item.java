@@ -16,9 +16,11 @@ public abstract class Item {
 
 	public abstract void print() ;
 
+
 	@Override
 	public String toString() {
 		return "title=" + title ;
 	}
+		public abstract String accept(Visitor v);
+	}
 	
-}

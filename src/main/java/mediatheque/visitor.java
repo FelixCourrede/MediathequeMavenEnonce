@@ -1,11 +1,7 @@
 package mediatheque;
 
-public class visitor {
-    public String visitCD(CD cd){
-        return cd.toString();
-    }
-        public String visitBook(Book book){
-        return book.toString();
-    }
+public interface Visitor {
+    public String visit(CD cd);
+        public String visit(Book book);
 }
 
